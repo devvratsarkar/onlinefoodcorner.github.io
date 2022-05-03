@@ -1,0 +1,263 @@
+/* CSS reset */
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    font-family: 'Balsamiq Sans', cursive;
+font-family: 'Fredoka', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+
+/* navigation bar: logo and img  */
+#logo{
+margin: 10px 34px;
+}
+#logo img {
+    border-radius: 50px;
+    width: 67px;
+    height: 59px;
+    margin: 3px 6px;
+ 
+}
+
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* position: fixed; */
+    top: 0px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    width: 100%;
+    
+    
+}
+
+/* navigation bar:- list styling */
+ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.76;
+    height: 86px;
+}
+
+li{
+    list-style: none;/*remove dots*/
+    font-size: 1.3rem;
+}
+
+li a{
+    border-radius: 7px;
+    color:white;
+    display: block;/*by default inline*/    
+    padding: 3px 22px;
+    text-decoration: none;
+
+}
+
+li a:hover{
+    background-color: grey;
+    height: 30px;
+    color: black;
+    /* font-weight: 500; */
+    
+}
+
+
+/* Home section */
+#Home {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 100px;
+    height: 440px;
+    align-items: center;
+    justify-content: center;
+}
+#Home::before{
+    content: "";
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    background-image: url("../img/back.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 799px;
+    width: 100% ;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+p{
+    font-size: 16px;
+    color: black;
+    font-weight: bolder;
+    /* font-family: serif; */
+}
+
+/* services center */
+#service-container{
+    margin: 0px;
+    padding: 0px;
+    background-color: #a9cfc9;
+}
+#services{
+    margin: 34px;
+    display: flex;
+}
+
+#services .box{
+margin: 3px 11px;
+text-align: center;
+padding: 2px;
+border-radius: 28px;
+height: 300px;
+}
+
+#services .box img{
+height: 125px;
+width: 162px;
+border-radius: 12px;
+}
+
+#services .box:hover{
+background-color: black;
+/* height: 300x; */
+box-shadow: 2px 2px 2px 2px  green;
+color: white;
+}
+#services .box p{
+    font-size: 10px;
+    color: white;
+    }  
+
+/* support section */
+#support-section{
+    margin: 0px;
+    padding: 0px;
+    margin-top: -34px;
+    
+}
+#supports{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#supports .image img{
+    height: 84px;
+    width: 85px;
+   margin: 68px 56px;
+} 
+
+#supports .image img:hover{ 
+    height: 75px;
+}
+.supports p{
+    text-align: center;
+}
+#support-section::before{
+    content: "";
+    position: absolute;
+    background-image: url("../img/bg1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 266px;
+    z-index: -1;
+    opacity: 1;
+}
+
+/* utility class */
+.h-primary{
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2px;
+    /* font-family: 'Courier New', Courier, monospace; */
+    text-align: center;
+    color: green;
+   
+}
+
+.h-secondary{
+    font-size: 2rem;
+    padding: 2px;
+    text-align: center;
+}
+
+
+.btn{
+    padding:7px;
+    /* border: 2px solid white; */
+    border: none;
+    background-color: #d18b17;
+    border-radius: 7px;
+    margin: 45px;
+    cursor: pointer;
+    font-size: 20px;
+    height: 40px;
+    width: 170px;
+    color: white;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+    
+}
+/* contect section */
+#contect{
+    position: relative;
+}
+#contect::before{
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 323px;
+   z-index: -1;
+   opacity: 0.8;
+   background: url('../img/contect.jpg') no-repeat center center/cover;
+}
+#contect-box{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    padding-bottom: 28px;
+}
+#contect-box form {
+    width: 500px;
+    
+}
+#contect-box input{
+    border-radius: 8px;
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+button {
+    width:127px;
+    height: 34px;
+    border-radius: 5px;
+    margin-top: 9px;
+}
+button:hover {
+   background-color: gray;
+}
+footer{
+    background: black;
+    text-align: center;
+    padding: 4px;
+    color: white;
+}
